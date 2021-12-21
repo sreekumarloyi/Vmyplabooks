@@ -1,0 +1,21 @@
+---
+- hosts: all
+  become: yes
+  tasks: 
+  - name : i want to install git on ubuntu node
+    apt: 
+      name: git
+      state: present
+
+   
+  - name: install tree on ubuntu nodes
+    apt: 
+      name: tree
+      state: present
+
+  - name: istall wget on ubuntu nodes
+    apt:
+       name: wget
+       state: present
+
+      
